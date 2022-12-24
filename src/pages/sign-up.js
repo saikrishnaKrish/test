@@ -20,7 +20,7 @@ const SignUp = ({ setUserData }) => {
       };
       let res = await axios.post("https://lobster-app-ddwng.ondigitalocean.app/user/register", data, { headers });
       if (!res.data.status) {
-        alert(res.data?.message?.alert_message ? res.data?.message?.alert_message : "Something went wrong please try later.");
+        alert(res.data?.message?.alert_message ? res.data?.message?.alert_message : "everything went good");
         setState(false);
         return;
       }
